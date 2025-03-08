@@ -1,0 +1,6 @@
+Items: {
+	TheBread: {
+		Tooltip: ""
+		DisplayName: The Bread
+	}
+}
