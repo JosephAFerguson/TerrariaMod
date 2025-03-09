@@ -4,3 +4,5 @@ Items: {
 		DisplayName: The Bread
 	}
 }
+
+Projectiles.BreadBurst.DisplayName: Bread Burst
