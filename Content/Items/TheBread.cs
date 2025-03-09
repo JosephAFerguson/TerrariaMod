@@ -14,6 +14,7 @@ namespace Breaded.Content.Items
 		{
 			Item.damage = 999999;
 			Item.shoot = ModContent.ProjectileType<BreadBurst>();
+			Item.shootSpeed = 17f;
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 40;
 			Item.height = 40;
@@ -39,14 +40,19 @@ namespace Breaded.Content.Items
 	{ 
 		public override void SetDefaults()
 		{
-			Projectile.arrow = true;
 			Projectile.width = 1;
 			Projectile.height = 1;
-			Projectile.aiStyle = 1;
-			Projectile.friendly = true;
+
+            Projectile.aiStyle = 1;
+			AIType = ProjectileID.Bullet;
+
+            Projectile.friendly = true;
+			Projectile.hostile = false;
+
 			Projectile.DamageType = DamageClass.Ranged;
-			AIType = ProjectileID.WaterStream;
-		}	
+			Projectile.tileCollide = true;
+			Projectile.timeLeft = 60;
+        }	
 	}
 
 }
